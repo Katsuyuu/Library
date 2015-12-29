@@ -1,3 +1,4 @@
+create database Library
 use Library
 
 create table Users
@@ -13,3 +14,6 @@ create table Users
 );
 
 select * from Users
+
+insert into Users
+values ('Adrian', 'Borowiec', '05-11-1994', 'os.Batorego 82M/15', 'Poznan', 116925, 1)

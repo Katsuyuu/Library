@@ -19,11 +19,12 @@ namespace Library
             DatabaseConnection NewConnection = new DatabaseConnection();
 
             NewConnection.Connect();
-
+            /*
             string napis = "";
             napis = NewConnection.Test();
 
             textBox1.AppendText(napis);
+            */
         }
     }
 }
