@@ -1,19 +1,29 @@
+
+-- tylko przy 1 uzyciu - tworzenie bazy danych
 create database Library
+--
+
 use Library
 
 create table Users
 (
-"UserID"		int primary key identity(1,1) not null,
-"FirstName"		varchar(255) not null,
-"LastName"		varchar(255) not null,
-"BirthDate"		date,
-"Address"		varchar(255),
-"City"			varchar(255),
-"IndexNumber"	int not null,
-"IsAdmin"		bit not null,
+"Index"				int primary key not null,
+FirstName			varchar(255) not null,
+LastName			varchar(255) not null,
+BirthDate			date,
+Sex					varchar(2) not null check(Sex in('M','K')),
+Email				varchar(255) not null,
+City				varchar(255),
+Street				varchar(255),
+HouseNumber			varchar(10),
+ApartmentNumber		int,
+IsAdmin				bit not null,
 );
+
+drop table Users
+
 
 select * from Users
 
 insert into Users
-values ('Adrian', 'Borowiec', '05-11-1994', 'os.Batorego 82M/15', 'Poznan', 116925, 1)
+values (116925, 'Adrian', 'Borowiec', '05-11-1994', 'M', 'adrian.borowiec@student.put.poznan.pl', 'Poznan', 'os.Batorego', '82M', '15', 1)

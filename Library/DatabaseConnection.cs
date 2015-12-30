@@ -19,7 +19,6 @@ namespace Library
             conn = new SqlConnection("Data Source=(local); Initial Catalog=Library; Integrated Security=SSPI");
 
             conn.Open();
-            conn.Close();
         }
 
         public string Test()
