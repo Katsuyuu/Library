@@ -9,13 +9,11 @@ namespace Library
 {
     public partial class DatabaseConnection
     {
-        public SqlConnection conn = null;
-        public SqlDataReader rdr = null;
+        public static SqlConnection conn = null;
+        public static SqlDataReader rdr = null;
 
-        public void Connect()
+        public DatabaseConnection()
         {
-            //string connectionString = Library.Properties.Settings.Default.ConnectionString;   -- powinno automatycznie wylapywac conn stringa, ale nie dziala :(
-
             conn = new SqlConnection("Data Source=(local); Initial Catalog=Library; Integrated Security=SSPI");
 
             conn.Open();
@@ -23,33 +21,27 @@ namespace Library
 
         public string Test()
         {
-            SqlCommand PrintUsers = new SqlCommand("select * from Users", conn);
+            SqlCommand printUsers = new SqlCommand("select FirstName, LastName, \"Index\" from Users", conn);
             string napis = "";
 
-            rdr = PrintUsers.ExecuteReader();
+            rdr = printUsers.ExecuteReader();
             try
             {
                 while (rdr.Read())
                 {
-                    for (int i = 0; i < 8; i++)
+                    for (int i = 0; i < rdr.VisibleFieldCount; i++)
                     {  
-                       napis = napis + rdr[i] + " ";
+                       napis = napis + rdr[i] + " - ";
                     }
 
                     napis += "\n";
                 }
             }
-
             finally
             {
                 if (rdr != null)
                 {
                     rdr.Close();
-                }
-
-                if (conn != null)
-                {
-                    conn.Close();
                 }
             }
 

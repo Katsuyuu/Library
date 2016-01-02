@@ -8,6 +8,7 @@ use Library
 create table Users
 (
 "Index"				int primary key not null,
+"Password"			varchar(255) not null,
 FirstName			varchar(255) not null,
 LastName			varchar(255) not null,
 BirthDate			date,
@@ -20,10 +21,15 @@ ApartmentNumber		int,
 IsAdmin				bit not null,
 );
 
+drop table BorrowController
 drop table Users
-
 
 select * from Users
 
 insert into Users
-values (116925, 'Adrian', 'Borowiec', '05-11-1994', 'M', 'adrian.borowiec@student.put.poznan.pl', 'Poznan', 'os.Batorego', '82M', '15', 1)
+values (116925, 'aaa', 'Adrian', 'Borowiec', '05-11-1994', 'M', 'adrian.borowiec@student.put.poznan.pl', 'Poznan', 'os.Batorego', '82M', '15', 1)
+
+
+
+
+
