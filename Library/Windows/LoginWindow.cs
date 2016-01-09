@@ -44,13 +44,15 @@ namespace Library.Windows
                         {
                             AdminMainWindow adminMainWindow = new AdminMainWindow();
                             adminMainWindow.Show();
-                            adminMainWindow.Activate();                            
+                            adminMainWindow.Activate();
+                            this.Hide();
                         }
                         else
                         {
                             UserMainWindow userMainWindow = new UserMainWindow();
                             userMainWindow.Show();
                             userMainWindow.Activate();
+                            this.Hide();
                         }
                     }
                 }
