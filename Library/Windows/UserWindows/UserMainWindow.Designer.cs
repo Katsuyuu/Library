@@ -35,16 +35,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(57, 44);
+            this.button1.Location = new System.Drawing.Point(57, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 53);
             this.button1.TabIndex = 1;
             this.button1.Text = "Wyszukaj Książkę";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(57, 103);
+            this.button2.Location = new System.Drawing.Point(57, 115);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 51);
             this.button2.TabIndex = 2;
@@ -53,7 +54,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(57, 160);
+            this.button3.Location = new System.Drawing.Point(57, 191);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 54);
             this.button3.TabIndex = 3;
@@ -64,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 469);
+            this.ClientSize = new System.Drawing.Size(423, 469);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

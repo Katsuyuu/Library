@@ -32,6 +32,7 @@ namespace Library
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
+            this.Hide();
         }
     }
 }

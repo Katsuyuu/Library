@@ -16,5 +16,11 @@ namespace Library.Windows.UserWindows
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SelectBookTitle select = new SelectBookTitle();
+            select.Show();
+        }
     }
 }
