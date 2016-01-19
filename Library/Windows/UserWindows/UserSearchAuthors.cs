@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Library.Windows.UserWindows
 {
-    public partial class UserMainWindow : Form
+    public partial class UserSearchAuthors : Form
     {
-        public UserMainWindow()
+        public UserSearchAuthors()
         {
             InitializeComponent();
         }
-
-
     }
 }

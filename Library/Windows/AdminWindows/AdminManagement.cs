@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Library.Windows.UserWindows
+namespace Library.Windows.AdminWindows
 {
-    public partial class UserMainWindow : Form
+    public partial class AdminManagement : Form
     {
-        public UserMainWindow()
+        public AdminManagement()
         {
             InitializeComponent();
         }
-
-
     }
 }

@@ -23,47 +23,10 @@ namespace Library.Windows
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand checkAdmin = new SqlCommand("select * from Users" +
-                                                    " where \"Index\" = " + textBox1.Text +
-                                                    " and \"Password\" = '" + textBox2.Text + "'", DatabaseConnection.conn);
-            
-            SqlDataReader rdr = checkAdmin.ExecuteReader();
+            // DO TESTOW, COBY NIE MUSIEC CO CHWILE SIE LOGOWAC NA ADMINA
+            AdminMainWindow adminMainWindow = new AdminMainWindow();
+            adminMainWindow.Show();
 
-            try
-            {
-                while (rdr.Read())
-                {
-                    if (textBox1.Text == "" || textBox2.Text == "")
-                    {
-                        MessageBox.Show("Nie podales danych! Sprobuj ponownie");
-                    }
-                    else
-                    {
-                        //if (rdr[11].Equals(true))             // to dziala, ale rozwiazanie dosc slabe
-                        if (rdr.GetSqlBoolean(11) == true)      // w sumie podobne :D
-                        {
-                            AdminMainWindow adminMainWindow = new AdminMainWindow();
-                            adminMainWindow.Show();
-                            adminMainWindow.Activate();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            UserMainWindow userMainWindow = new UserMainWindow();
-                            userMainWindow.Show();
-                            userMainWindow.Activate();
-                            this.Hide();
-                        }
-                    }
-                }
-            }
-            finally
-            {
-                if (rdr != null)
-                {
-                    rdr.Close();
-                }
-            }
         }
     }
 }

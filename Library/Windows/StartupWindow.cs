@@ -18,21 +18,13 @@ namespace Library
         {
             InitializeComponent();
 
-            DatabaseConnection newConnection = new DatabaseConnection();
-            
-            // dla testow
-
-            string napis = newConnection.Test();
-            textBox1.Text = napis;
-
-            //
+            DatabaseConnection db = new DatabaseConnection();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonLogowanie_Click(object sender, EventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
-            this.Hide();
         }
     }
 }

@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace Library.Windows.UserWindows
 {
-    public partial class UserMainWindow : Form
+    public partial class UserSearchBooks : Form
     {
-        public UserMainWindow()
+        public UserSearchBooks()
         {
             InitializeComponent();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

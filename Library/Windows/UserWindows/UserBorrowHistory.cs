@@ -10,13 +10,21 @@ using System.Windows.Forms;
 
 namespace Library.Windows.UserWindows
 {
-    public partial class UserMainWindow : Form
+    public partial class UserBorrowHistory : Form
     {
-        public UserMainWindow()
+        public UserBorrowHistory()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
