@@ -54,7 +54,7 @@
           <Key>
             <PropertyRef Name="Index" />
           </Key>
-          <Property Name="Index" Type="int" Nullable="false" />
+          <Property Name="Index" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="FirstName" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="LastName" Type="varchar" MaxLength="255" Nullable="false" />
@@ -199,7 +199,7 @@
           <Key>
             <PropertyRef Name="Index" />
           </Key>
-          <Property Name="Index" Type="Int32" Nullable="false" />
+          <Property Name="Index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
