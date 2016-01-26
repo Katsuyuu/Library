@@ -7,26 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library.Database
+namespace Library
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Authors
+    public partial class Publishers
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Authors()
+        public Publishers()
         {
             this.Books = new HashSet<Books>();
         }
     
-        public int AuthorID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public Nullable<System.DateTime> BirthDate { get; set; }
-        public string Sex { get; set; }
-        public string Country { get; set; }
+        public int PublisherID { get; set; }
+        public string Name { get; set; }
         public string City { get; set; }
+        public string Street { get; set; }
+        public string HouseNumber { get; set; }
+        public Nullable<int> ApartmentNumber { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Books> Books { get; set; }

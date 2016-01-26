@@ -16,5 +16,11 @@ namespace Library.Windows.AdminWindows
         {
             InitializeComponent();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AdminSearchEngine x = new AdminSearchEngine();
+            x.Show();
+        }
     }
 }

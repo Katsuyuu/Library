@@ -14,9 +14,14 @@ namespace Library
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        
+        static DatabaseConnection DBConnection;
+
         [STAThread]
         static void Main()
         {
+            DBConnection = new DatabaseConnection();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());          
