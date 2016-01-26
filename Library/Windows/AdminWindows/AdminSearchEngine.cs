@@ -15,6 +15,20 @@ namespace Library.Windows.AdminWindows
         public AdminSearchEngine()
         {
             InitializeComponent();
+
+            using (var db = new LibraryEntities())
+            {
+                var users = (from u in db.Users
+                             select new
+                             {
+                                 Index = u.Index,
+                                 Imie = u.FirstName,
+                                 Nazwisko = u.LastName,
+                                 Admin = u.IsAdmin
+                             }).ToList();
+
+                dataGridView1.DataSource = users;
+            }
         }
     }
 }
