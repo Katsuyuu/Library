@@ -133,6 +133,7 @@
             this.button7.TabIndex = 5;
             this.button7.Text = "Wyszukaj";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // AdminMainWindow
             // 
