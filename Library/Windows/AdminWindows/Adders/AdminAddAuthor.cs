@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Library.Windows.AdminWindows
+namespace Library.Windows.AdminWindows.Adders
 {
-    public partial class AdminManagement : Form
+    public partial class AdminAddAuthor : Form
     {
-        public AdminManagement()
+        public AdminAddAuthor()
         {
             InitializeComponent();
         }
