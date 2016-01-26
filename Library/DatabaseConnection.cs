@@ -14,6 +14,8 @@ namespace Library
         public DatabaseConnection()
         {
             db = new LibraryEntities();
+
+            //komentarz :D 
         }
     }
 }
