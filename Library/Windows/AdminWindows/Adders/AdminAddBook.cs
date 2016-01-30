@@ -16,5 +16,29 @@ namespace Library.Windows.AdminWindows.Adders
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Dodaj
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Resetuj
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Anuluj
+            this.Hide();
+        }
     }
 }

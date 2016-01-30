@@ -15,20 +15,28 @@ namespace Library.Windows.AdminWindows
         public AdminSearchEngine()
         {
             InitializeComponent();
+        }
 
-            using (var db = new LibraryEntities())
-            {
-                var users = (from u in db.Users
-                             select new
-                             {
-                                 Index = u.Index,
-                                 Imie = u.FirstName,
-                                 Nazwisko = u.LastName,
-                                 Admin = u.IsAdmin
-                             }).ToList();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Edytuj
+        }
 
-                dataGridView1.DataSource = users;
-            }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Usun
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Wyszukaj
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Powrot
+
+            this.Hide();
         }
     }
 }

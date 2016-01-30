@@ -16,5 +16,40 @@ namespace Library.Windows.AdminWindows.Adders
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var db = DatabaseConnection.DBConnection)
+            {
+                var newPublisher = new Publishers();
+                
+                newPublisher.Name = textBox1.Text;
+                newPublisher.City = textBox2.Text;
+                newPublisher.Street = textBox3.Text;
+                newPublisher.HouseNumber = textBox4.Text;
+                newPublisher.ApartmentNumber = Convert.ToInt32(textBox5.Text);
+
+                db.Publishers.Add(newPublisher);
+                db.SaveChanges();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Resetuj
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Anuluj
+
+            this.Hide();
+        }
     }
 }

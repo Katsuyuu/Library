@@ -15,6 +15,8 @@ namespace Library
         /// The main entry point for the application.
         /// </summary>
         
+
+        // komentarz
         static DatabaseConnection DBConnection;
 
         [STAThread]

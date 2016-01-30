@@ -116,9 +116,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 13);
+            this.label4.Size = new System.Drawing.Size(182, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Data Urodzenia:";
+            this.label4.Text = "Data Urodzenia (Rok-Miesiac-Dzien):";
             // 
             // textBox5
             // 
@@ -132,9 +132,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 165);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Plec:";
+            this.label5.Text = "Plec (K / M):";
             // 
             // textBox6
             // 
@@ -255,6 +255,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Dodaj";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -264,6 +265,7 @@
             this.button2.TabIndex = 24;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -273,6 +275,7 @@
             this.button3.TabIndex = 25;
             this.button3.Text = "Anuluj";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AdminAddUser
             // 

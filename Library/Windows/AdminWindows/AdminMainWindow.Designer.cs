@@ -38,6 +38,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +72,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Użytkownika";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -80,6 +82,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Wydawnictwo";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -89,6 +92,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Autora";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -98,28 +102,31 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Książkę";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(32, 262);
+            this.button5.Location = new System.Drawing.Point(32, 285);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(142, 48);
             this.button5.TabIndex = 2;
             this.button5.Text = "Kontrola Wypożyczeń";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(226, 39);
+            this.button6.Location = new System.Drawing.Point(225, 23);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(117, 46);
             this.button6.TabIndex = 3;
             this.button6.Text = "Wyloguj";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(226, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(226, 131);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 142);
             this.pictureBox1.TabIndex = 4;
@@ -127,19 +134,30 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(226, 262);
+            this.button7.Location = new System.Drawing.Point(225, 75);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(116, 48);
+            this.button7.Size = new System.Drawing.Size(117, 48);
             this.button7.TabIndex = 5;
-            this.button7.Text = "Wyszukaj";
+            this.button7.Text = "Edytuj Profil";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(226, 286);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(116, 46);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "Wyszukaj";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // AdminMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 341);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
@@ -167,5 +185,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

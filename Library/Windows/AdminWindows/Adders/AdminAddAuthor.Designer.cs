@@ -59,9 +59,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.Size = new System.Drawing.Size(182, 13);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Rok Urodzenia:";
+            this.label3.Text = "Data Urodzenia (Rok-Miesiac-Dzien):";
             // 
             // label2
             // 
@@ -149,6 +149,7 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Dodaj";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -158,6 +159,7 @@
             this.button2.TabIndex = 28;
             this.button2.Text = "Resetuj";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -167,6 +169,7 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "Anuluj";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AdminAddAuthor
             // 

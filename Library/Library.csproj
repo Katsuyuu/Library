@@ -164,6 +164,12 @@
     <Compile Include="Windows\AdminWindows\AdminBorrowControl.Designer.cs">
       <DependentUpon>AdminBorrowControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AdminWindows\AdminEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AdminWindows\AdminEditProfile.Designer.cs">
+      <DependentUpon>AdminEditProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AdminWindows\AdminMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
