@@ -16,5 +16,19 @@ namespace Library.Windows.AdminWindows
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Zapisz zmiany
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Anuluj
+
+            this.Hide();
+        }
     }
 }
