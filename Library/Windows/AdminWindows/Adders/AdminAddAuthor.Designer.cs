@@ -105,6 +105,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 20);
             this.textBox1.TabIndex = 21;
+            this.textBox1.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox2
             // 
@@ -112,6 +113,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(317, 20);
             this.textBox2.TabIndex = 22;
+            this.textBox2.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox3
             // 
@@ -126,6 +128,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(317, 20);
             this.textBox4.TabIndex = 24;
+            this.textBox4.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox5
             // 

@@ -15,6 +15,21 @@ namespace Library.Windows.AdminWindows
         public AdminBorrowControl()
         {
             InitializeComponent();
+
+            using (var db = new LibraryEntities())
+            {
+                var borrowController = (from bc in db.BorrowController
+                             select new
+                             {
+                                 Indeks = bc.Index,
+                                 Ksiazka = bc.Index,    // ogarnac ladne wyswietlanie ksiazki
+                                 Od = bc.From,
+                                 Do = bc.To
+                             }).ToList();
+
+                dataGridView1.DataSource = borrowController;
+            }
+
         }
     }
 }

@@ -21,6 +21,40 @@ namespace Library.Windows.AdminWindows.Adders
         {
             // Dodaj
 
+            using (var db = new LibraryEntities())
+            {
+                try
+                {
+                    var newBook = new Books();
+                    var authors = new Authors();
+                    // logika
+
+                    
+                                
+                    //
+
+                    db.Books.Add(newBook);
+                    db.SaveChanges();
+
+                    db.Books.Add(newBook);
+                    db.SaveChanges();
+                }
+
+                catch (FormatException)
+                {
+                    MessageBox.Show("Nie wszystkie wymagane pola zostaly wypelnione!");
+                    return;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Wystapil blad podczas zapisywania danych w bazie:\n\n" + ex);
+                    return;
+                }
+
+                MessageBox.Show("Rekord pomyslnie zapisano!");
+                this.Hide();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

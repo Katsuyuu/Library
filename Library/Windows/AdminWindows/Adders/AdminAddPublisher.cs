@@ -19,18 +19,31 @@ namespace Library.Windows.AdminWindows.Adders
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var db = DatabaseConnection.DBConnection)
-            {
-                var newPublisher = new Publishers();
-                
-                newPublisher.Name = textBox1.Text;
-                newPublisher.City = textBox2.Text;
-                newPublisher.Street = textBox3.Text;
-                newPublisher.HouseNumber = textBox4.Text;
-                newPublisher.ApartmentNumber = Convert.ToInt32(textBox5.Text);
+            // Dodaj
 
-                db.Publishers.Add(newPublisher);
-                db.SaveChanges();
+            using (var db = new LibraryEntities())
+            {
+                try
+                {
+                    var newPublisher = new Publishers();
+
+                    newPublisher.Name = textBox1.Text;
+                    newPublisher.City = textBox2.Text;
+                    newPublisher.Street = textBox3.Text;
+                    newPublisher.HouseNumber = textBox4.Text;
+                    newPublisher.ApartmentNumber = Convert.ToInt32(textBox5.Text);
+
+                    db.Publishers.Add(newPublisher);
+                    db.SaveChanges();
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show("Wystapil blad podczas zapisywania danych w bazie:\n\n" + exc);
+                    return;
+                }
+
+                MessageBox.Show("Rekord pomyslnie zapisano!");
+                this.Hide();
             }
         }
 

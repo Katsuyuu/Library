@@ -62,6 +62,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(260, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox2
             // 
@@ -69,6 +70,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(260, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.BackColor = System.Drawing.Color.Khaki;
             // 
             // label2
             // 
@@ -85,6 +87,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(260, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.BackColor = System.Drawing.Color.Khaki;
             // 
             // label3
             // 
@@ -101,6 +104,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(260, 20);
             this.textBox4.TabIndex = 7;
+            this.textBox4.BackColor = System.Drawing.Color.Khaki;
             // 
             // label4
             // 
@@ -117,6 +121,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(260, 20);
             this.textBox5.TabIndex = 9;
+            this.textBox5.BackColor = System.Drawing.Color.Khaki;
             // 
             // label5
             // 
@@ -133,6 +138,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(260, 20);
             this.textBox6.TabIndex = 11;
+            this.textBox6.BackColor = System.Drawing.Color.Khaki;
             // 
             // label6
             // 
@@ -179,6 +185,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(260, 20);
             this.textBox7.TabIndex = 16;
+            this.textBox7.BackColor = System.Drawing.Color.Khaki;
             // 
             // label7
             // 
