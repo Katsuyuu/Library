@@ -57,6 +57,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "Wyloguj";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // groupBox1
             // 
@@ -77,6 +78,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Wydawnictwa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -86,6 +88,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Autorzy";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -95,6 +98,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Książki";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -123,6 +127,7 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "Historia Wypożyczeń";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // UserMainWindow
             // 

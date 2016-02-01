@@ -39,6 +39,7 @@ namespace Library.Windows.UserWindows
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,10 +61,11 @@ namespace Library.Windows.UserWindows
             this.DO});
             this.listView1.Location = new System.Drawing.Point(12, 34);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(344, 128);
+            this.listView1.Size = new System.Drawing.Size(400, 128);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // TYTUŁ
             // 
@@ -73,12 +75,12 @@ namespace Library.Windows.UserWindows
             // OD
             // 
             this.OD.Text = "OD";
-            this.OD.Width = 53;
+            this.OD.Width = 81;
             // 
             // DO
             // 
             this.DO.Text = "DO";
-            this.DO.Width = 53;
+            this.DO.Width = 77;
             // 
             // label2
             // 
@@ -98,7 +100,7 @@ namespace Library.Windows.UserWindows
             this.columnHeader3});
             this.listView2.Location = new System.Drawing.Point(12, 205);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(344, 202);
+            this.listView2.Size = new System.Drawing.Size(400, 202);
             this.listView2.TabIndex = 6;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -111,18 +113,29 @@ namespace Library.Windows.UserWindows
             // columnHeader2
             // 
             this.columnHeader2.Text = "OD";
-            this.columnHeader2.Width = 53;
+            this.columnHeader2.Width = 86;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "DO";
-            this.columnHeader3.Width = 53;
+            this.columnHeader3.Width = 71;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(436, 34);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 60);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "powrót";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UserBorrowHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 419);
+            this.ClientSize = new System.Drawing.Size(544, 419);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView1);
@@ -146,5 +159,6 @@ namespace Library.Windows.UserWindows
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Button button1;
     }
 }
