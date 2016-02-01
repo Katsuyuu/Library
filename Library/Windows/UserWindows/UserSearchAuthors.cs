@@ -42,6 +42,7 @@ namespace Library.Windows.UserWindows
                                  BirthDate = a.BirthDate,
                                  Country = a.Country,
                                  City = a.City,
+                                 Quantity = b.Quantity,
                                  BorrowLimit = b.BorrowLimit
 
                              };
@@ -67,7 +68,7 @@ namespace Library.Windows.UserWindows
                 }
 
                 dataGridView1.DataSource = author.ToList();
-
+                
             }
 
            
@@ -105,17 +106,19 @@ namespace Library.Windows.UserWindows
             //wypozycz
             //wybranie konkretnego wiersza
             DataGridViewRow row = dataGridView1.SelectedRows[0];
-            DataGridViewCellCollection ble = row.Cells;
+            DataGridViewCellCollection cell = row.Cells;
 
-            // zmniejszenie limitu wypozyczenia
-            int borrowLimit = Int32.Parse(ble[6].Value.ToString());
-            borrowLimit--;
+            // zmniejszenie ilosci wypozyczenia
+            int quantity = Int32.Parse(cell[6].Value.ToString());
+            quantity--;
+            
+            mainWindow.userSearchBook.czas_do = Int32.Parse(cell[7].Value.ToString());
 
             //konwert do stringa pierwszych trzech pol, czyli imie, nazwisko i tytuł ksiazki
-            string nazwaa = ble[0].Value.ToString() + " " + ble[1].Value.ToString() + " " + ble[2].Value.ToString();
+            string nazwaa = cell[0].Value.ToString() + " " + cell[1].Value.ToString() + " " + cell[2].Value.ToString();
             lista.Add(nazwaa);
             
-            MessageBox.Show(nazwaa);
+            MessageBox.Show("Wypożyczono!");
 
             
         }

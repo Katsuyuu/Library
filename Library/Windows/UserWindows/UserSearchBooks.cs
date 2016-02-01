@@ -15,6 +15,7 @@ namespace Library.Windows.UserWindows
     public partial class UserSearchBooks : Form
     {
         UserMainWindow mainWindow;
+        public int czas_do;
         public UserSearchBooks(UserMainWindow mainWindow)
         {
             InitializeComponent();
@@ -39,8 +40,8 @@ namespace Library.Windows.UserWindows
                                AuthorLastName = a.LastName,
                                Publishers = p.Name,
                                PublishYear = b.PublishYear,
-                               BorrowLimit = b.BorrowLimit
-                             
+                               BorrowLimit = b.BorrowLimit,
+                               Quantity = b.Quantity
 
                          };
 
@@ -68,7 +69,7 @@ namespace Library.Windows.UserWindows
 
 
                 dataGridView1.DataSource = book.ToList();
-
+                
             }
 
            
@@ -97,8 +98,29 @@ namespace Library.Windows.UserWindows
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //powrót
             mainWindow.Show();
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //wybranie konkretnego wiersza
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+            DataGridViewCellCollection cell = row.Cells;
+
+            // zmniejszenie ilosci wypozyczenia
+            int quantity = Int32.Parse(cell[6].Value.ToString());
+            quantity--;
+
+            czas_do = Int32.Parse(cell[5].Value.ToString());
+
+            //konwert do stringa pierwszych trzech pol, czyli imie, nazwisko i tytuł ksiazki
+            string nazwaa = cell[1].Value.ToString() + " " + cell[2].Value.ToString() + " " + cell[0].Value.ToString();
+
+            mainWindow.userSearchAuthor.lista.Add(nazwaa);
+
+            MessageBox.Show("Wypożyczono!");
         }
     }
 }

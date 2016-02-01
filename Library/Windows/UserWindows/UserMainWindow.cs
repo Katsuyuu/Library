@@ -15,7 +15,7 @@ namespace Library.Windows.UserWindows
        public UserSearchAuthors userSearchAuthor;
        public UserSearchBooks userSearchBook;
        public UserBorrowHistory userBorrowHistory;
-      
+        public UsersSearchPublishers userSearchPublishers;
         
         public UserMainWindow()
         {
@@ -23,8 +23,8 @@ namespace Library.Windows.UserWindows
             userSearchAuthor = new UserSearchAuthors(this);
             userSearchBook = new UserSearchBooks(this);
             userBorrowHistory = new UserBorrowHistory(this);
-
-
+            userSearchPublishers = new UsersSearchPublishers(this);
+           
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -58,6 +58,13 @@ namespace Library.Windows.UserWindows
             userBorrowHistory.wyswietl();
             this.Hide();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //wydawnictwa
+            userSearchPublishers.Show();
+            this.Hide();
         }
     }
 }

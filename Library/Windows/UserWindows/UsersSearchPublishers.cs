@@ -12,9 +12,11 @@ namespace Library.Windows.UserWindows
 {
     public partial class UsersSearchPublishers : Form
     {
-        public UsersSearchPublishers()
+        UserMainWindow mainWindow;
+        public UsersSearchPublishers(UserMainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
         }
 
         public void wyswietl_wydawnictwa()
@@ -43,6 +45,13 @@ namespace Library.Windows.UserWindows
         private void button1_Click(object sender, EventArgs e)
         {
             wyswietl_wydawnictwa();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //powrót
+            mainWindow.Show();
+            this.Hide();
         }
     }
 }

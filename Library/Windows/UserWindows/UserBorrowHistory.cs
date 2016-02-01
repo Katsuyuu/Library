@@ -28,11 +28,18 @@ namespace Library.Windows.UserWindows
 
         public void wyswietl()
         {
-            //MessageBox.Show(""+mainWindow.userSearchAuthor.lista.Count());
+            int czas_do = mainWindow.userSearchBook.czas_do;
+
+            DateTime d = DateTime.Today;
+            string dzis = d.ToString("d");
+
+            DateTime data1 = DateTime.Now.AddDays(czas_do);
+
             foreach (string nazwa in mainWindow.userSearchAuthor.lista)
             {
-                richTextBox1.Text = nazwa;
-               
+                ListViewItem element = listView1.Items.Add(nazwa);
+                element.SubItems.Add(dzis);
+                element.SubItems.Add(data1.ToString());
             }
         }
 

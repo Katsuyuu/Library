@@ -38,9 +38,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(230, 37);
+            this.button1.Location = new System.Drawing.Point(236, 22);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.Size = new System.Drawing.Size(92, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Wyświetl";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,18 +48,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 39);
+            this.textBox1.Location = new System.Drawing.Point(27, 37);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
+            this.textBox1.Size = new System.Drawing.Size(178, 21);
             this.textBox1.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 103);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(295, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(244, 199);
             this.dataGridView1.TabIndex = 2;
             // 
             // label1
@@ -79,6 +79,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "powrót";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // UsersSearchPublishers
             // 
