@@ -80,7 +80,8 @@ namespace Library.Windows.AdminWindows
                 {
                     #region WYSZUKIWANIE KSIAZKI FLAGA=1
                     
-                    var books = (from b in db.Books join a in db.Authors on b.AuthorID equals a.AuthorID
+                    var books = (from b in db.Books 
+                                 join a in db.Authors on b.AuthorID equals a.AuthorID
                                  join p in db.Publishers on b.PublisherID equals p.PublisherID
                                  select new
                                  {
