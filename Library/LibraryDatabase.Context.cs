@@ -30,5 +30,7 @@ namespace Library
         public virtual DbSet<BorrowController> BorrowController { get; set; }
         public virtual DbSet<Publishers> Publishers { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+
+      
     }
 }

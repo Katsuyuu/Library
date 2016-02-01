@@ -24,8 +24,11 @@ namespace Library.Windows
         private void button1_Click(object sender, EventArgs e)
         {
             // DO TESTOW, COBY NIE MUSIEC CO CHWILE SIE LOGOWAC NA ADMINA
-            AdminMainWindow adminMainWindow = new AdminMainWindow();
-            adminMainWindow.Show();
+            /* AdminMainWindow adminMainWindow = new AdminMainWindow();
+             adminMainWindow.Show();*/
+            UserMainWindow userMainWindow = new UserMainWindow();
+            userMainWindow.Show();
+            this.Hide();
 
         }
     }

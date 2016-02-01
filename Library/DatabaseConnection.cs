@@ -9,13 +9,7 @@ namespace Library
 {
     public partial class DatabaseConnection
     {
-        public static LibraryEntities db;
+        public static LibraryEntities DBConnection = new LibraryEntities();
 
-        public DatabaseConnection()
-        {
-            db = new LibraryEntities();
-
-            //komentarz :D 
-        }
     }
 }
