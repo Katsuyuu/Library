@@ -50,9 +50,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 210);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Plec:";
+            this.label4.Text = "Plec (M/K):";
             // 
             // label3
             // 
@@ -101,19 +101,19 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Khaki;
             this.textBox1.Location = new System.Drawing.Point(12, 29);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 20);
             this.textBox1.TabIndex = 21;
-            this.textBox1.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.Khaki;
             this.textBox2.Location = new System.Drawing.Point(12, 68);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(317, 20);
             this.textBox2.TabIndex = 22;
-            this.textBox2.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox3
             // 
@@ -124,11 +124,11 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.Khaki;
             this.textBox4.Location = new System.Drawing.Point(12, 148);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(317, 20);
             this.textBox4.TabIndex = 24;
-            this.textBox4.BackColor = System.Drawing.Color.Khaki;
             // 
             // textBox5
             // 
@@ -143,6 +143,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(317, 20);
             this.textBox6.TabIndex = 26;
+            this.textBox6.BackColor = System.Drawing.Color.Khaki;
             // 
             // button1
             // 

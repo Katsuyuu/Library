@@ -26,15 +26,24 @@ namespace Library.Windows.AdminWindows.Adders
                 try
                 {
                     var newBook = new Books();
-                    var authors = new Authors();
-                    // logika
 
-                    
-                                
-                    //
+                    newBook.AuthorID = (from a in db.Authors
+                                       where a.FirstName == textBox1.Text
+                                       where a.LastName == textBox2.Text
+                                       select a.AuthorID).FirstOrDefault();
+                    newBook.Title = textBox3.Text;
+                    newBook.PublisherID = (from p in db.Publishers
+                                           where p.Name == textBox4.Text
+                                           select p.PublisherID).FirstOrDefault();
+                    newBook.PublishYear = Convert.ToInt32(textBox5.Text);
+                    newBook.Quantity = Convert.ToInt32(textBox6.Text);
+                    newBook.BorrowLimit = Convert.ToInt32(textBox7.Text);
 
-                    db.Books.Add(newBook);
-                    db.SaveChanges();
+                    if (newBook.BorrowLimit == 0)
+                    {
+                        MessageBox.Show("Maksymalna ilosc dni wypozyczenia nie moze byc = 0!");
+                        return;
+                    }
 
                     db.Books.Add(newBook);
                     db.SaveChanges();

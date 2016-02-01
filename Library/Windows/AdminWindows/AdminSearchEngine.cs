@@ -18,8 +18,9 @@ namespace Library.Windows.AdminWindows
 
             // test
 
-            using (var db = new LibraryEntities())
-            {
+            using (LibraryEntities db = new LibraryEntities())
+            {               
+
                 var users = (from u in db.Users
                              select new
                              {
