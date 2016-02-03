@@ -54,8 +54,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -272,31 +270,11 @@
             this.dataGridView1.Size = new System.Drawing.Size(748, 404);
             this.dataGridView1.TabIndex = 27;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(482, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 36);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Edytuj";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(670, 462);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 36);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Usuń";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(294, 462);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 36);
+            this.button3.Size = new System.Drawing.Size(349, 36);
             this.button3.TabIndex = 30;
             this.button3.Text = "Wyszukaj";
             this.button3.UseVisualStyleBackColor = true;
@@ -304,9 +282,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(858, 462);
+            this.button4.Location = new System.Drawing.Point(691, 462);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(182, 36);
+            this.button4.Size = new System.Drawing.Size(349, 36);
             this.button4.TabIndex = 31;
             this.button4.Text = "Powrót";
             this.button4.UseVisualStyleBackColor = true;
@@ -319,8 +297,6 @@
             this.ClientSize = new System.Drawing.Size(1060, 523);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label14);
@@ -383,8 +359,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,54 +20,6 @@ namespace Library.Windows.AdminWindows
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Edytuj
-
-            using (var db = new LibraryEntities())
-            {
-                switch (flaga)
-                {
-                    case 1:     // KSIAZKA
-                        {
-                            break;
-                        }
-                    case 2:     // AUTOR
-                        {
-                            break;
-                        }
-                    case 3:     // UZYTKOWNIK
-                        {
-                            break;
-                        }
-                }
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Usun
-            BindingSource bs = new BindingSource();
-
-            using (var db = new LibraryEntities())
-            {
-                switch (flaga)
-                {
-                    case 1:     // KSIAZKA
-                        {
-                            break;
-                        }
-                    case 2:     // AUTOR
-                        {
-                            break;
-                        }
-                    case 3:     // UZYTKOWNIK
-                        {
-                            break;
-                        }
-                }
-            }
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -85,8 +38,9 @@ namespace Library.Windows.AdminWindows
                                  join p in db.Publishers on b.PublisherID equals p.PublisherID
                                  select new
                                  {
+                                     ID = b.BookID,
                                      Tytul = b.Title,
-                                     Autor = b.Authors.FirstName + b.Authors.LastName,
+                                     Autor = b.Authors.FirstName + " " + b.Authors.LastName,
                                      Wydawnictwo = b.Publishers.Name,
                                      Rok_Wydania = b.PublishYear,
                                      Ilosc = b.Quantity,
@@ -111,9 +65,11 @@ namespace Library.Windows.AdminWindows
                         flaga = 1;
                     }
 
+                    books.ToList();
+
                     if (flaga == 1)
                     {
-                        dataGridView1.DataSource = books.ToList();
+                        dataGridView1.DataSource = books.ToList();                        
                     }
                     
                     #endregion
@@ -123,6 +79,7 @@ namespace Library.Windows.AdminWindows
                     var authors = (from a in db.Authors
                                    select new
                                    {
+                                       ID = a.AuthorID,
                                        Imie = a.FirstName,
                                        Nazwisko = a.LastName,
                                        Data_urodzenia = a.BirthDate,
@@ -224,6 +181,11 @@ namespace Library.Windows.AdminWindows
             // Powrot
 
             this.Hide();
+        }
+
+        private void usuńWierszToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
