@@ -28,72 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Kto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Tytuł = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Autor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Od = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Do = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listView1
+            // dataGridView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Kto,
-            this.Tytuł,
-            this.Autor,
-            this.Od,
-            this.Do});
-            this.listView1.Location = new System.Drawing.Point(34, 23);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(474, 245);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(508, 275);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // Kto
+            // button1
             // 
-            this.Kto.Text = "Kto wypożyczył";
-            this.Kto.Width = 88;
-            // 
-            // Tytuł
-            // 
-            this.Tytuł.Text = "Tytuł";
-            this.Tytuł.Width = 172;
-            // 
-            // Autor
-            // 
-            this.Autor.Text = "Autor";
-            this.Autor.Width = 90;
-            // 
-            // Od
-            // 
-            this.Od.Text = "Od";
-            // 
-            // Do
-            // 
-            this.Do.Text = "Do";
+            this.button1.Location = new System.Drawing.Point(207, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 36);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Powrót";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminBorrowControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 299);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(532, 356);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "AdminBorrowControl";
             this.Text = "AdminBorrowControl";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Kto;
-        private System.Windows.Forms.ColumnHeader Tytuł;
-        private System.Windows.Forms.ColumnHeader Autor;
-        private System.Windows.Forms.ColumnHeader Od;
-        private System.Windows.Forms.ColumnHeader Do;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+
 
     }
 }

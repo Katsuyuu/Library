@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="LibraryModel.Books" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="LibraryModel.BorrowController" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LibraryModel.Publishers" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LibraryModel.Users" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Users" Width="1.5" PointX="3.25" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="LibraryModel.FK__Books__AuthorID__6754599E" ManuallyRouted="false" />
         <AssociationConnector Association="LibraryModel.FK__Books__Publisher__68487DD7" ManuallyRouted="false" />
         <AssociationConnector Association="LibraryModel.FK__BorrowCon__BookI__06CD04F7" ManuallyRouted="false" />
